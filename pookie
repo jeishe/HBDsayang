@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Pookie 17th Birthday</title>
+  <style>
+    /* Background Styles */
+    body {
+      background-image: url('https://www.icegif.com/wp-content/uploads/2024/07/ponyo-icegif-1.gif');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Envelope Styles */
+    .envelope {
+      width: 300px;
+      height: 200px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.5s ease-in-out;
+      display: inline-block;
+      margin: 20px;
+    }
+
+    .envelope-front {
+      padding: 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .envelope-back {
+      padding: 20px;
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+      display: none;
+    }
+
+    .envelope-front h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .envelope-front p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .envelope-back p {
+      font-size: 18px;
+      color: #666;
+      text-align: center;
+    }
+
+    .envelope.open {
+      transform: rotateY(180deg);
+    }
+
+    .envelope-back.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="envelope">
+    <div class="envelope-front">
+      <h2>Happy Birthday!</h2>
+      <p>Dear Sheila Sayang aku,</p>
+      i have many words to say but needless to say i 
+      love you so much that i cannot show or express it
+      towards you,I just wanted to take a moment to tell you how happy you make me feel.
+      Being with you has brought so much light and joy into my life, and every day I find
+      more reasons to love and appreciate you. From the little things you do to the way you
+      make me smile, I truly feel so lucky to have you by my side. I hope you know how much you mean to me.
+      Every moment we spend together, whether we’re just talking or sharing quiet times,
+      reminds me how special you are. It’s in those simple moments that I realize how much
+      better my life has become with you in it. I want you to know that I’m incredibly grateful for
+      everything we have and everything we are building together. I hope we can keep this happiness,
+      this closeness, and the love we share forever. </p>
+      <p>With love, Jae</p>
+    </div>
+    <div class="envelope-back">
+      <p>Seal with a kiss!</p>
+    </div>  
+  </div>
+
+  <div class="envelope">
+    <div class="envelope-front">
+      <h2>Sheila</h2>
+      As we celebrate your 17th birthday, I want you to know that my love for you will never fade.
+      You are the sunshine that brightens up my day and the stars that light up my night.
+      You are my everything, and I promise to always be there for you, through thick and thin.
+      I love you more than words can express, and I hope you know that you will always be in my heart. I love you all
+      my life that i think i cannot live the same again if i lose you, every seconds i keep thinking of you like srsly
+      and everyday i miss you even tho we already talking am i weird!?!?! anyways i just want to say happy happy happy
+      17th ewww minor check WHAFHASHFHAH ILYYY Happy birthday, my love! </p>
+      <p>With all my love, Jae</p>
+    </div>
+    <div class="envelope-back">
+      <p>Forever yours!</p>
+    </div>  
+  </div>
+
+  <div class="envelope">
+    <div class="envelope-front">
+      <h2>Sativa</h2>
+      I believe that as long as we have each other, we can face
+      anything that comes our way. Thank you for being you and for making me feel so loved.
+      I hope we always stay this happy, and that our journey together continues to bring us closer every day. I know things have been tough lately, and I wish I could take away every worry and bit of stress you're feeling right now. But even though I can’t do that, I want you to know that I'm right here beside you, every step of the way. Remember, it’s okay to take a break and let yourself breathe. You don’t have to carry the weight of the world on your shoulders alone. We’re a team, and we’ll get through this together. </p>
+      <p>With all my love, Jae</p>
+    </div>
+    <div class="envelope-back">
+      <p>Yours always!</p>
+    </div>  
+  </div>
+
+  <div class="envelope">
+    <div class="envelope-front">
+      <h2>My Anjing</h2>
+ You are the love of my life, my reason for living.
+      You make my heart skip a beat, my soul sing, and my life worth living.
+      I promise to love you, honor you, and cherish you, now and forever.
+      Happy birthday, my love! Jaga dirimu baik-baik, sayangku. Kita akan melewati ini bersama, bergandengan tangan. </p>
+      <p>With all my love, Jae</p>
+    </div>
+    <div class="envelope-back">
+      <p>Forever and always!</p>
+    </div>  
+  </div>
+
+  <script>
+    const envelopes = document.querySelectorAll('.envelope');
+    const envelopeFronts = document.querySelectorAll('.envelope-front');
+    const envelopeBacks = document.querySelectorAll('.envelope-back');
+
+    envelopes.forEach((envelope, index) => {
+      envelope.addEventListener('click', () => {
+        envelope.classList.toggle('open');
+        envelopeBacks[index].classList.toggle('show');
+      });
+    });
+  </script>
+</body>
+</html>
